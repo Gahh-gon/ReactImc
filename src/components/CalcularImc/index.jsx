@@ -18,7 +18,7 @@ const handleAltura = (e)=>{
     
 }
 
-const HandleButton =(p,a)=>{
+const handleButton =(p,a)=>{
 const resul = p/(a *a )
 SetResul(resul)
 }
@@ -29,7 +29,7 @@ SetResul(resul)
             <br />
             <InputAltura Altura={Altura} handleAltura={handleAltura}/>
             <br />
-            <ButtonCaImc HandleButton={HandleButton} Peso={Peso}  Altura={Altura} />
+            <ButtonCaImc handleButton={handleButton} Peso={Peso}  Altura={Altura} />
             <br />
             <ResulImc Resul={Resul}/>
             </article>

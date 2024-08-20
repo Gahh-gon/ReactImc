@@ -1,5 +1,11 @@
-export default function ButtonCaImc({HandleButton,Peso,Altura}){
-    return(
-        <button onClick={()=>HandleButton(Peso,Altura)}>Calcular</button>
-    )
+import React from "react"
+export default class ButtonCaImc extends React.Component {
+    constructor(props){
+        super(props)
+    }
+    render() {
+        return(
+            <button onClick={()=> this.props.handleButton(this.props.Peso,this.props.Altura)}>Calcular</button>
+        )
+    }
 }
